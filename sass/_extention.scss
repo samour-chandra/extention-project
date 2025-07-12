@@ -1,0 +1,45 @@
+.extention {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+
+  &__right {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__left {
+    color: $color-white;
+  }
+}
+
+// footer
+
+.footer {
+  height: 8rem;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  // display: block;
+  &__iconme {
+    font-size: 3rem;
+    color: rgb(47, 80, 152);
+    margin-right: 20px;
+  }
+  &__iconwa {
+    font-size: 3rem;
+    color: rgb(16, 162, 48);
+    margin-right: 20px;
+  }
+  &__icontw {
+    font-size: 3rem;
+    color: rgb(21, 87, 110);
+    margin-right: 20px;
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
+}

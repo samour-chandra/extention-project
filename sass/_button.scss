@@ -1,0 +1,35 @@
+.btn-primary,
+.btn-primary:active {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 1.5rem;
+  padding: 0.6em 1.5em;
+  background-color: rgb(91, 95, 95);
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1.5px solid transparent;
+
+  &:hover {
+    background-color: rgb(175, 171, 171);
+    color: rgba(40, 40, 40, 0.938);
+    border: 1px solid red;
+  }
+}
+
+.active {
+  background-color: rgb(227, 34, 34) !important;
+  color: rgba(0, 0, 0, 0.938) !important;
+}
+
+.btn-card,
+.btn-card:active {
+  display: inline-block;
+  padding: 0.3em 1em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.btn-card:hover {
+  background-color: rgb(224, 21, 21);
+  color: white;
+}

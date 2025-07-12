@@ -1,0 +1,103 @@
+.card {
+  &__main {
+    width: 23%;
+    width: 29rem;
+    background-color: rgb(125, 122, 122);
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 1.5rem;
+    transition: all 2s;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    gap: 10px;
+    align-items: flex-start;
+    &-right {
+      text-align: left;
+      color: $color-white;
+    }
+    &-right h1 {
+      font-size: 1.7rem;
+      margin-bottom: 5px;
+    }
+    &-right p {
+      font-size: 14px;
+    }
+  }
+  &__logo-top {
+    width: 11.8rem;
+    display: inline-block;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 30%;
+    // height: ;
+  }
+
+  // make a cheackbox
+
+  &__cheackbox {
+    display: none;
+    &-label {
+      height: 22px;
+      width: 38px;
+      background-color: rgb(92, 90, 90);
+      border-radius: 16px;
+      display: inline-block;
+    }
+    &-ball {
+      width: 22px;
+      height: 22px;
+      background-color: $color-white;
+      border-radius: 50%;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+  }
+
+  // adding the event
+}
+.active-checkbox {
+  transform: translateX(16px);
+  background-color: rgb(229, 222, 222);
+}
+.active-box {
+  background-color: rgb(232, 25, 25);
+}
+
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  // height: fit-content;
+}
+
+// make card activce or in active
+
+.card-remove-frist {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.4s ease;
+}
+
+.card-remove {
+  display: none;
+}
+
+.card-remove-second {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+.card-remove-three {
+  opacity: 0;
+  transform: scale(-0.95);
+  pointer-events: none;
+}
