@@ -19,7 +19,7 @@
 }
 @media (max-width: 620px) {
   .card__main {
-    width: 99%;
+    width: 95%;
   }
   .container {
     margin-top: 2.5rem;
@@ -33,7 +33,12 @@
 }
 @media (max-width: 525px) {
   .card__main {
-    width: 99%;
+    width: 90%;
+    height: 15rem;
+  }
+  .card__container {
+    display: flex;
+    justify-content: center;
   }
   .extention {
     flex-direction: column;
