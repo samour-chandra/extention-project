@@ -1,5 +1,6 @@
 const cardButton = document.querySelectorAll(".card-event");
 const logoMood = document.querySelector(".header__right-logo");
+const logoHeaderContainer = document.querySelector(".header__right");
 const body = document.querySelector(".body");
 const activationButtons = document.querySelectorAll(".btn");
 const cardMianContainer = document.querySelectorAll(".card__main");
@@ -24,24 +25,24 @@ document
   });
 
 const lightMood = function () {
-  logoMood.src =
-    "./browser-extensions-manager-ui-main/assets/images/icon-moon.svg";
+  logoMood.src = "./images/icon-moon.svg";
   body.style.background = "linear-gradient(to left, #ECF3FD, #EFFBFB)";
 
   document.querySelector(".extention__left").style.color = "black";
   document.querySelector(".header").style.backgroundColor =
     "rgb(252, 253, 255)";
   mood = "dark";
+  logoHeaderContainer.style.backgroundColor = "rgb(221, 228, 243)";
 };
 const darkMood = function () {
-  logoMood.src =
-    "./browser-extensions-manager-ui-main/assets/images/icon-sun.svg";
+  logoMood.src = "./images/icon-sun.svg";
   body.style.background =
     "linear-gradient(to left, rgb(5, 10, 30), rgb(9, 21, 63))";
   document.querySelector(".header").style.backgroundColor =
-    "rgb(118, 119, 121)";
+    "rgb(184, 185, 187)";
   document.querySelector(".extention__left").style.color = "white";
   mood = "light";
+  logoHeaderContainer.style.backgroundColor = "rgba(135, 136, 138, 0.911)";
 };
 
 // showing the button is active
@@ -55,21 +56,6 @@ activationButtons.forEach((button) => {
     button.classList.toggle("active");
   });
 });
-
-// functionality for card checkbox who show card is active or not
-// cardButton.forEach((btn) => {
-//   btn.addEventListener("change", function (e) {
-//     const siblingDiv = btn.nextElementSibling;
-//     const child = siblingDiv.children[0];
-//     if (btn.checked) {
-//       siblingDiv.classList.add("active-box");
-//       child.classList.add("active-checkbox");
-//     } else {
-//       child.classList.remove("active-checkbox");
-//       siblingDiv.classList.remove("active-box");
-//     }
-//   });
-// });
 
 // adding event handler in the card main container to handler all the card event easyly
 cardMianContainer.forEach((container) => {

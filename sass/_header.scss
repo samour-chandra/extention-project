@@ -43,14 +43,14 @@ html {
   &__left {
     &-logo {
       width: 18rem;
-      fill: white;
     }
   }
 
   &__right {
     border-radius: 30%;
     border: none;
-    background-color: rgb(84, 90, 104);
+    // background-color: rgb(221, 228, 243);
+    background-color: rgba(135, 136, 138, 0.911);
     padding: 10px 15px;
     transition: all 0.2s;
 

@@ -38,12 +38,11 @@ html {
 }
 .header__left-logo {
   width: 18rem;
-  fill: white;
 }
 .header__right {
   border-radius: 30%;
   border: none;
-  background-color: rgb(84, 90, 104);
+  background-color: rgba(135, 136, 138, 0.911);
   padding: 10px 15px;
   transition: all 0.2s;
 }
@@ -171,7 +170,7 @@ html {
 
 .card-remove-frist {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(50px);
   transition: all 0.4s ease;
 }
 
