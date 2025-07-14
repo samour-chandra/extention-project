@@ -224,7 +224,7 @@ html {
 }
 @media (max-width: 525px) {
   .card__main {
-    width: 90%;
+    width: 88%;
     height: 15rem;
   }
   .card__container {
