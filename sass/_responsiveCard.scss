@@ -46,4 +46,10 @@
     margin: 0 0.1rem;
     gap: 25px;
   }
+
+  .card-remove-frist {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+  }
 }
